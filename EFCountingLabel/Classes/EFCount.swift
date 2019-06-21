@@ -48,7 +48,16 @@ extension EFCount {
 }
 
 public class EFCounter {
+
     public var timingFunction: EFTiming = EFTimingFunction.linear
+    //works same way as CADisplayLink.frameInterval
+    //0 - max frame rate
+    public var refreshRateInterval: Int = 2 {
+        didSet {
+            guard let timer = timer else { return }
+            apply(interval: refreshRateInterval, to: timer)
+        }
+    }
 
     public var updateBlock: ((CGFloat) -> Void)?
     public var completionBlock: (() -> Void)?
@@ -108,6 +117,16 @@ public class EFCounter {
         }
     }
 
+    private func apply(interval: Int, to displayLink: CADisplayLink) {
+        if #available(iOS 10.3, *) {
+            displayLink.preferredFramesPerSecond = interval > 0 ? max(1, UIScreen.main.maximumFramesPerSecond / interval) : 0
+        } else if #available(iOS 10.0, *) {
+            displayLink.preferredFramesPerSecond = interval > 0 ? max(1, 60 / interval) : 0
+        } else {
+            displayLink.frameInterval = interval == 0 ? 1 : interval
+        }
+    }
+
     //set init values
     public func reset() {
         invalidate()
@@ -148,11 +167,7 @@ extension EFCounter: EFCount {
         lastUpdate = CACurrentMediaTime()
 
         let timer = CADisplayLink(target: self, selector: #selector(updateValue(_:)))
-        if #available(iOS 10.0, *) {
-            timer.preferredFramesPerSecond = 30
-        } else {
-            timer.frameInterval = 2
-        }
+        apply(interval: refreshRateInterval, to: timer)
         timer.add(to: .main, forMode: .default)
         timer.add(to: .main, forMode: .tracking)
         self.timer = timer

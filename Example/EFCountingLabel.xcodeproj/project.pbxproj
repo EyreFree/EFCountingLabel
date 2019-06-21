@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29AF0091229EE2CE006A18B4 /* FrameRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF0090229EE2CE006A18B4 /* FrameRateViewController.swift */; };
 		5EEE4459477CD89613CC9254 /* Pods_EFCountingLabel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8BF1F2807CCE416BEF5C0C /* Pods_EFCountingLabel_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		615470077217336459F28548 /* StoryboardButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615478D55F97750BE62D6350 /* StoryboardButtonViewController.swift */; };
 		61547605835C3408C93468DF /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615478D4657C10BDDB2930B2 /* CustomTableViewController.swift */; };
+		6154767B05F9D92C4A3CCD3D /* DynamicFrameRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6154777F75D51F92326A369C /* DynamicFrameRateViewController.swift */; };
 		61547AB8DD5A704F70185C87 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6154772B1F9DBE58D87528C6 /* ListTableViewController.swift */; };
 		61547FDE291FDA37914D8D74 /* StoryboardLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615477C97BA7D1BE03393744 /* StoryboardLabelViewController.swift */; };
 		88B4CB65271A07819AE9D976 /* Pods_EFCountingLabel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF702AD45972585A86A336D5 /* Pods_EFCountingLabel_Example.framework */; };
@@ -33,6 +35,7 @@
 /* Begin PBXFileReference section */
 		0D6321623D5D5D7DD361D3FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		276DE02E85C0E7D6ED37EDD4 /* Pods-EFCountingLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFCountingLabel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EFCountingLabel_Example/Pods-EFCountingLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		29AF0090229EE2CE006A18B4 /* FrameRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameRateViewController.swift; sourceTree = "<group>"; };
 		378DEADB22321D1400F0F63D /* README_CN.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README_CN.md; path = ../README_CN.md; sourceTree = "<group>"; };
 		378DEADC22321D1400F0F63D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		47A0BF93F64203C763BE2E42 /* Pods-EFCountingLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFCountingLabel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EFCountingLabel_Tests/Pods-EFCountingLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6154772B1F9DBE58D87528C6 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		6154777F75D51F92326A369C /* DynamicFrameRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFrameRateViewController.swift; sourceTree = "<group>"; };
 		615477C97BA7D1BE03393744 /* StoryboardLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLabelViewController.swift; sourceTree = "<group>"; };
 		615478D4657C10BDDB2930B2 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		615478D55F97750BE62D6350 /* StoryboardButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardButtonViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				615478D55F97750BE62D6350 /* StoryboardButtonViewController.swift */,
 				615477C97BA7D1BE03393744 /* StoryboardLabelViewController.swift */,
 				615478D4657C10BDDB2930B2 /* CustomTableViewController.swift */,
+				29AF0090229EE2CE006A18B4 /* FrameRateViewController.swift */,
+				6154777F75D51F92326A369C /* DynamicFrameRateViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -345,9 +351,11 @@
 			files = (
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				61547AB8DD5A704F70185C87 /* ListTableViewController.swift in Sources */,
+				29AF0091229EE2CE006A18B4 /* FrameRateViewController.swift in Sources */,
 				615470077217336459F28548 /* StoryboardButtonViewController.swift in Sources */,
 				61547FDE291FDA37914D8D74 /* StoryboardLabelViewController.swift in Sources */,
 				61547605835C3408C93468DF /* CustomTableViewController.swift in Sources */,
+				6154767B05F9D92C4A3CCD3D /* DynamicFrameRateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
